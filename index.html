@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prim shapes</title>
+    <style type="text/css">
+        canvas {
+            border: 5px solid red;
+            background-color: white;
+        }
+
+        .button {
+            font-size: 50px;
+            background-color: blue;
+            color: azure;
+            border-radius: 30px;
+            border-color: blueviolet;
+        }
+
+        .button2 {
+            font-size: 50px;
+            background-color: red;
+            color: azure;
+            border-radius: 30px;
+            border-color: blueviolet;
+        }
+
+        .button3 {
+            font-size: 50px;
+            background-color: yellow;
+            color: azure;
+            border-radius: 30px;
+            border-color: blueviolet;
+        }
+
+        .button4 {
+            font-size: 50px;
+            background-color: green;
+            color: azure;
+            border-radius: 30px;
+            border-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <button 
+    id="buttonX" 
+    onclick="toggleMovementLeft();"
+     class="button"
+     >-x
+    </button>
+
+    <button 
+    id="buttonY" 
+    onclick="toggleMovementDown();"
+     class="button2"
+     >-Y
+    </button>
+
+    
+    <button 
+    id="buttonY" 
+    onclick="toggleMovementUp();"
+     class="button3"
+     >+Y
+    </button>
+    
+    <button 
+    id="buttonY" 
+    onclick="toggleMovementRight();"
+     class="button4"
+     >+X 
+    </button>
+
+
+    <canvas id="myCanvas" width="800" height="800"></canvas>
+
+    <script src="main.js"></script>
+</body>
+</html>
